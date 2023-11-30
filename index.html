@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JS DOM</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>JS DOM</h1>
-    <div>
+    <div id="counter-container">
+      <div>
         <h2>Counter</h2>
         <p id="counter">0</p>
-        <button id="btn-increase">Increase</button>
+        <button id="increase" class="btn">Increase</button>
+        <button id="decrease" class="btn">Decrease</button>
+        <button id="random" class="btn">RANDOM!</button>
+      </div>
+    </div>
+
+    <div id="p-container">
+      <button id="newParagraph">New paragraph</button>
+    </div>
+
+    <div id="color-container" onclick="handleDelete(event)">
+      <ul>
+        <li>
+          <ul>
+            <li>DELETE ME!</li>
+            <li>DELETE ME!</li>
+            <li>DELETE ME!</li>
+          </ul>
+        </li>
+        <li>DELETE ME!</li>
+        <li>DELETE ME!</li>
+      </ul>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
